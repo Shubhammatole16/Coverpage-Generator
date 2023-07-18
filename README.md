@@ -4,4 +4,4 @@ This Web App was created for my sister. It is designed to make college life easi
 
 # Technologies used:
 
-The techonolgies which i used to create this project are Html Css and Javascript, for pdf generation i have made use of the jsPdf library
+The techonolgies which i used to create this project are Html, Css and Javascript and for pdf generation i have made use of the jsPdf library.
