@@ -5,185 +5,281 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/coverpage.css">
-    <!--font-family: 'Baloo Thambi 2', cursive;-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!--font-family: 'Fira Code', monospace;-->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!--Emailjs script-->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="scripts/email.js"></script>
-    <script src="scripts/function.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init("fUIDrOD7GrEIVjf6u");
-    })();
-    </script>
-    
-
+    <!--For File-->
+  
+     <!--font-family: 'Open Sans', sans-serif;-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--hero section-->
-    <section class="hero-section" id="landing-page">
-        <!--nav section-->
-        <section class="nav-bar">
-            <ul class="nav-options"> 
-                    <img src="images/avatar2.png" class="img" id="logo" onclick="scrollToSection('landing-page')">
-                <div class="pc-options">
-                    <li class="nav-option" onclick="scrollToSection('page3')" >Projects</li>
-                    <li class="nav-option" onclick="scrollToSection('page2')">About</li>
-                    <li class="nav-option" onclick="scrollToSection('page4')">Resume</li>
-                    <li class="nav-option" onclick="scrollToSection('page5')">Contact Me</li>
+    <!--Start of everything-->
+    <section class="everything">
+        <!--For background of landing page-->
+        <section class="landing-page-background">
+            <!--Start of nav bar-->
+            <section class="nav-bar">
+                <ul class="nav-options">
+                        <li class="logo">
+                            JAYAWANTRAO SAWANT COLLEGE OF ENGINEERING
+                        </li>
                     
-                </div>
-            </ul>
-        </section>
-        <!--End of nav bar-->
-        <section class="main-section">
-            <div class="main-container">
-                <div class="text-container">
-                    <h1 class="main-header">Hello I'M <br>Kedar.</h1>
-                    <h2 class="sub-header">Welcome to my portfolio website!</h2>
-                </div>
-                <div class="main-img">
-                    <img src="images/vector3.png" class="img-main">
-                </div>
-            </div>
-        </section>
-    </section>
-    <!--start of about page-->
-    <section class="page2" id="page2">
-        <div class="page2-wrapper">
-            <div class="about"><h2 class="about-header">About-Me.html</h2>
-                <p class="para">Welcome to my portfolio website! I'm Kedar Patil, a passionate software developer and recent Computer Science Engineering graduate. 
-                    <br><br>With a strong foundation in programming and a keen interest in technology, I strive to create innovative and efficient solutions. I specialize in various development such as web development, with expertise in HTML, CSS, JavaScript, java, SQL etc. 
-                    <br><br>My projects showcase my skills in creating user-friendly web applications and solving real-world problems. I'm excited to share my journey, projects, and experiences with you. 
-                    <br><br>Feel free to explore my portfolio and get in touch!
-                </p>
-            </div>
-    </section>
-    <!--end of about page-->
-    <!--start of project page-->
-    <section class="page3" id="page3">
-        <div class="project-section">
-            <h2 class="project-header">My Projects.html</h2>
-            <div class="project-container">
-              <div class="project-card"><div class="item-header">Project-1.html</div>
-                    <div class="pro-content"><b>Cover-Page Generator:</b> <br>This is the Web App created for the students of my college department which can be used to generate
-                            the coverpage of the lab reports without any hassle student just need to enter the required information in the all the input fields
-                            and upon clicking the download buttton the pdf of the coverpage should be generated.
+                    <div class="pc-options">
+                        <li class="nav-option">Projects</li>
+                        <li class="nav-option">Routine</li>
+                        <li class="nav-option">Notes</li>
                     </div>
-                    <span class="links"><a href=" https://github.com/Patilkedar23/coverpagegenerator.git" class="git">git-></a><a href="https://patilkedar23.github.io/coverpagegenerator/" class="demo">demo-></a></span>
-                </div>
-              <div class="project-card"><div class="item-header">Project-2.html</div><div class="pro-content"><b>Error-404:Coming-soon</b></div></div>
-              <div class="project-card"><div class="item-header">Project-3.html</div><div class="pro-content"><b>Error-404:Coming-soon</b></div></div>
-              <div class="project-card"><div class="item-header">Project-4.html</div><div class="pro-content"><b>Error-404:Coming-soon</b></div></div>
-              <div class="project-card"><div class="item-header">Project-5.html</div><div class="pro-content"><b>Error-404:Coming-soon</b></div></div>
-              <div class="project-card"><div class="item-header">Project-6.html</div><div class="pro-content"><b>Error-404:Coming-soon</b></div></div> 
-              <div class="project-card"><div class="item-header">Project-7.html</div><div class="pro-content"><b>Error-404:Coming-soon</b></div></div> 
-        </div>
-    </section>
-    <!--end of project page-->
-    <!--start of resume page-->
-    <section class="page4" id="page4">
-        <div class="resume-section">
-            <h2 class="project-header">Resume.html</h2>
-            <div class="top-part">
-                <div class="name">Kedar Patil</div>
-                <div class="contact-info">7875808345 kedarpatil234@gmail.com Pune,maharashtra</div>
-            </div>
-            <div class="summary">
-                <div class="resume-header">summary</div> 
-            </div>
-            <hr class="horizontal-line">
-            <div class="summary-description">
-                As a recent Computer Science Engineering graduate, I have a strong foundation in programming and a passion for software development.
-                With proficiency in C, C++, Java, HTML, CSS, and JavaScript, I am well-equipped for full-stack web development and software engineering. 
-                Through My projects, I have demonstrated my ability to solve real-world challenges effectively. I am eager to contribute my skills and drive impactful solutions as part of your team.
-            </div>
-            <div class="resume-header">Skills</div>
-            <hr class="horizontal-line">
-            <div class="skills"><b>Technical Skills:</b>C,C++,Java,Html,Css,Javascript,SQL,Git,github</div>
-            <div class="resume-header">Projects</div>
-            <hr class="horizontal-line">
-            <div class="projects-header">Coverpage-Generator</div>
-               <div class="pro-desc"> This is the Web App created for the students of my college department which can be used to generate the coverpage of the lab reports without any 
-                hassle student just need to enter the required information in the all the input fields and upon clicking the download button the pdf of the coverpage should be generated.
-                The techonologies which i used to create this project are Html,Css and Javascript, for pdf generation i have made use of the jsPdf library.
-            </div>
-            <div class="projects-header">Portfolio-website</div>
-            <div class="pro-desc">My portfolio website is a visually appealing and responsive platform that showcases my skills and projects. 
-                It features sections like About Me, Projects and Contact. Users can easily get in touch with me through the contact section. 
-                The website is designed to grow as I continue to add new projects and update my skills.
-            </div>
-            <div class="resume-header">Education</div>
-            <hr class="horizontal-line">
-           <div class="edu-desc"><b>SSC</b><br>
-                Boisar Military School, Boisar &nbsp;| &nbsp;Percentage:88.4/100 &nbsp;| &nbsp;2016 - 2017<br>
-                <b>HSC</b><br>
-                H.D. Save Jr. College, Tarapur &nbsp;| &nbsp;Percentage:62.3/100&nbsp; |&nbsp;  2018 - 2019<br>
-                <b>B.E Computer Science</b><br>
-                Jayawantrao Sawant College Of Engineering  &nbsp;|&nbsp;  CGPA:8.7/10 &nbsp; | &nbsp;2019-2023
-            </div>
-            <div class="resume-header">Languages Known</div>
-            <hr class="horizontal-line">
-            <div class="language-desc">
-                <div class="lan">English</div>
-                <div class="lan">Marathi</div>
-                <div class="lan">Hindi</div>
-            </div>
-            <div class="resume-header">Interests and Hobbies</div>
-            <hr class="horizontal-line">
-            <div class="hob-desc">
-                <div class="hob">Trekking</div>
-                <div class="hob">Painting</div>
-                <div class="hob">Sketching</div>
-            </div>
-            <div class="resume-header">Personal details</div>
-            <hr class="horizontal-line">
-            <div class="personal-desc">
-                Gender - Male <br>
-                DOB - 23th March 2002<br>
-                Permanent Address - Bhavana Bunglow behind airtel tower, <br>pasthal naka, Boisar-Tarapur road, 401504.
-            </div>
-            <div class="button">
-                <button class="cv" id="resume-button" onclick="downloadPDF()">Download CV</button>
-            </div>
-        </div>
-    </section>
-    <!--end of resume page-->
-    <!--start of contact me-->
-    <section class="page5" id="page5">
-        <div class="contact-me">
-            <h2 class="project-header">Contact-Me.html</h2>
-            <form action="submit" id="contactform">
-                <label for="name" class="label">Name :</label>
-                <input type="text" id="name" class="textbox" name="name" placeholder="Enter your name here.." required>
-                <br>
-                <label for="email" class="label">Email :</label>
-                <input type="email" id="email" class="textbox" name="email" placeholder="Enter your email here.." required>
-                <br>
-                <label for="phone" class="label">Phone :</label>
-                <input type="tel" id="phone" class="textbox" name="Phone" placeholder="Enter your Mobile No here.." required>
-                <br>
-                <label for="message" class="label">Message :</label>
-                <input type="tel" id="message" class="textbox" name="Phone" placeholder="Enter your Message here.." required>
-                <br>
-                <div class="form-button">
-                    <div class="button-wrapper">
-                        <input id="submit-btn" type="submit" value="submit" class="fbutton" onclick="sendemail(event)">
-                        <input id="reset-btn" type="reset" value="Reset" class="fbutton">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-    <!--End of contact me-->
-</body>
-</html>
+                </ul>
+                
 
+            </section>
+            <!--End of nav bar-->
+
+            <!--Start of landing page-->
+            <section class="hero-page">
+                <div class="hero-page-slogan">
+                    <span>Search here ↓</span><br>
+                    Find anything that you need 
+                </div>
+                <!--Start of Search part-->
+                <section class="search-part">
+                    <div class="text-input">
+                        <input autocomplete="off" placeholder="For eg. Class Routine" id="search-id">
+                    </div>
+                    <div class="search-btn" onclick="searchandscroll()">
+                        <div class="search-txt">
+                            Search
+                        </div>
+                        <div class="search-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>                              
+                        </div>
+                    </div>
+                </section>
+                <!--End of Search part-->
+            </section>
+            <!--End of landing page-->
+        
+        <!--Start of Everything link-->
+        <section class="every-projects-link">
+            <div class="header">
+                <div class="main-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                      </svg> everything is here!
+                </div>
+                <div class="sub-header">
+                    This is the compilation of everything we offer!
+                </div>
+            </div>
+            <div class="every-projects-body" id="every-project">
+                <div class="show-item" id="clickable">Final year Project Documents</div>
+                <div class="show-item" id="clickable">Class Routine</div>
+                <div class="show-item" id="clickable" onclick="scrollToSection('cover-page')">Coverpage Generator</div>
+                <div class="show-item" id="clickable">Notes</div>
+                <div class="show-item" id="clickable">Resume Template</div>
+                <div class="show-item" id="clickable">Syllabus</div>
+            </div>
+        </section>
+        <!--End of Everything link-->
+    
+<!--start of cover page generator-->
+    <section class="cover-page-generator-page" id="cover-page">
+        <div class="cp-header">
+            <div class="cp-main-header">
+                Coverpage Generator
+            </div>
+            <div class="cp-sub-header">
+                This is for the automation of coverpage for JSPM Computer Dept only!
+            </div>
+            <!--Start of Generator Card-->
+            <div class="generator-whole">
+                <!--Start Of Generator Body-->
+                <div class="generator-body">
+                    <div class="input-field">
+                        <!--Name taker-->
+                        <div class="input-name">
+                            <div class="gen-header">Name:</div>
+                            <div class="name-selector">
+                                <input autocomplete="off" placeholder="For eg: Rahul" type="text" name="name">
+                            </div>
+                        </div>
+                        <!--Roll No taker-->
+                        <div class="roll-no">
+                            <div class="gen-header">Roll No:</div>
+                            <div class="roll-no-selector">
+                                <input autocomplete="off" placeholder="For eg: 12" type="text" name="roll-no">
+                            </div>
+                        </div>
+                        <!--Subject taker-->
+                        <div class="subject">
+                            <div class="gen-header">Subject:</div>
+                            <select class="subject-selector" id="subselect">
+                                <optgroup label="Sem-3">
+                                    <option  selected disabled>Select an option</option>
+                                    <option>Discrete Mathematics</option>
+                                    <option>Fundamental Of Data Structures</option>
+                                    <option>Object Oriented Programming</option>
+                                    <option>Computer Graphics</option>
+                                    <option>Digital Electronics And Logic Design</option>
+                                    <option>Data Structures Laboratory</option>
+                                    <option>OOP And Computer Graphics laboratory </option>
+                                    <option>Digital Electronics Laboratory</option>
+                                    <option>Buisness Communication Skills</option>
+                                    <option>Humanity And Social Science</option>
+                                    <option>Audit Course 3</option>
+                                </optgroup>
+
+                                <optgroup label="Sem-4">
+                                    <option>Engineering Mathematics 3</option>
+                                    <option>Data Structures And Algorithms</option>
+                                    <option>Software Engineering</option>
+                                    <option>Microprocessor</option>
+                                    <option>Principals Of Programming Languages</option>
+                                    <option>Data Structures And Algorithms Laboratory</option>
+                                    <option>Microprocessor laboratory </option>
+                                    <option>Project Based Learning 2</option>
+                                    <option>Code Of Conduct</option>
+                                    <option>Audit Course 4</option>
+                                </optgroup>
+                                <optgroup label="Sem-5">
+                                    <option>Database Management System</option>
+                                    <option>Theory Of Computation</option>
+                                    <option>System Programming And Operating System</option>
+                                    <option>Computer Networks And Security</option>
+                                    <option>Elective-1 Internet Of Things And Embedded System</option>
+                                    <option>Elective-1 Human Computer Interface</option>
+                                    <option>Elective-1 Distributed Systems </option>
+                                    <option>Elective-1 Software Project Management</option>
+                                    <option>Database Management Systems Laboratory</option>
+                                    <option>Computer Networks And Security Laboratory</option>
+                                    <option>Laboratory Practice 1</option>
+                                    <option>Seminar And Technical Communication</option>
+                                    <option>Audit Course 5</option>
+                                </optgroup>
+                                <optgroup label="Sem-6">
+                                    <option>Data Science And Big Data Analytics</option>
+                                    <option>Web Technology</option>
+                                    <option>Artificial Intelligence</option>
+                                    <option>Internship</option>
+                                    <option>Elective-2 Information Security</option>
+                                    <option>Elective-2 Augumented And Virtual Reality</option>
+                                    <option>Elective-2 Cloud Computing </option>
+                                    <option>Elective-2 Software Modeling And Architectures</option>
+                                    <option>Data Science And Big Data Analytics Laboratory</option>
+                                    <option>Web Technology Laboratory</option>
+                                    <option>Laboratory Practice 2</option>
+                                    <option>Audit Course 6</option>
+                                </optgroup>
+
+                                <optgroup label="Sem-7">
+                                    <option>Design And Analysis Of Algorithms</option>
+                                    <option>Machine Learning</option>
+                                    <option>Blockchain Technology</option>
+                                    <option>Pervasive Computing</option>
+                                    <option>Multimedia Techniques</option>
+                                    <option>Cyber Security And Digital Forensics</option>
+                                    <option>Object Oriented Modeling And Design </option>
+                                    <option>Digital Signal Processing</option>
+                                    <option>Information Retrieval</option>
+                                    <option>Gpu Programming And Architecture</option>
+                                    <option>Mobile Computing</option>
+                                    <option>Software Testing And Quality Assurance</option>
+                                    <option>Compilers</option>
+                                    <option>Laboratory Practice 3</option>
+                                    <option>Laboratory Practice 4</option>
+                                    <option>Project Stage 1</option>
+                                    <option>Audit Course 7</option>
+                                </optgroup>
+
+                                <optgroup label="Sem-8">
+                                    <option>High Performance Computing</option>
+                                    <option>Deep Learning</option>
+                                    <option>Natural Language Processing</option>
+                                    <option>Image Processing</option>
+                                    <option>Software Defined Networks</option>
+                                    <option>Advanced Digital Signal Processing</option>
+                                    <option>Pattern Recognition</option>
+                                    <option>Soft Computing</option>
+                                    <option>Buisness Intelligence</option>
+                                    <option>Quantum Computing</option>
+                                    <option>Laboratory Practice 5</option>
+                                    <option>Laboratory Practice 6</option>
+                                    <option>Project Stage 2</option>
+                                    <option>Audit Course 8</option>
+                                </optgroup>
+
+                            </select>
+                        </div>
+                          <!-- Report no taker -->
+                          <div class="report-no-selector">
+                            <div class="gen-header">Report No:</div>
+                            <input autocomplete="off" placeholder="For eg: LAB REPORT 12" type="text" name="report-no">
+                          </div>
+                           <!--Title Taker-->
+                        <div class="title-selector">
+                            <div class="gen-header">Title:</div>
+                            <input placeholder="For eg: Report on..." type="text">
+                        </div>
+                        <!--Download Button-->
+                        <button type="submit" class="download">
+                            Download
+                        </button>
+                        <!-- PDF to DOCX Hyperlink-->
+                        <div class="pdf-to-docx-link">
+                            <div class="hyperlink-header">Convert .pdf to .docx ↓</div>
+                            <a href="https://pdf2docx.com" target="_blank" rel="noopener noreferrer">pdf2docx.com</a>
+                        </div>
+                    </div>
+                    </div> <!--input field Closed-->
+
+                    <!--Start of Sample PDF-->
+                    <!--Output-->
+                    <div class="output">
+                        <div class="top-part">
+                            <div class="college-name">Jayawantrao Sawant College Of Engineering</div>
+                            <div class="address">Hadapsar, Pune</div>
+                            <div class="affiliated">(Affiliated to Savitribai Phule Pune University)</div>
+                        </div>
+                        <div class="clg-logo">
+                            <img src="images/college-logo.png" alt="">
+                        </div>
+                        <!--titles-->
+                        <div class="titles">
+                            <div class="department">(Department of Computer Science)</div>
+                            <div class="subject-title">subject</div>    
+                            <div class="report-no">Lab Report</div>
+                            <div class="title">TITLE</div>
+                        </div>
+                        <!--submitted section-->
+                        <div class="submitted">
+                            <div class="subm-header">Submitted By:</div>
+                            <div class="name">Name Here</div>
+                            <div class="subm-header">Roll No:</div>
+                            <div class="sub-roll-no">Roll NO HERE</div>
+                            
+
+                        </div>
+                        <div class="signature">(Signature)</div>
+                    </div><!--output end-->
+                        
+                </div><!--End of Generator Card-->
+
+    </section><!--end of cover page generator-->
+
+
+</section><!--End of background of landing page-->
+
+        
+
+    </section>
+    <!--End of everything-->
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="Scripts/coverpage-js/option.js"></script>
+<script src="Scripts/Functions/function.js"></script>
+<script src="Scripts/coverpage-js/pdf.js"></script>
+</html>
