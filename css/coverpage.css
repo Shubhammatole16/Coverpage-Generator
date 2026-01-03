@@ -28,13 +28,8 @@
     width: 100%;
     min-height: 100dvh;
     background-color: var(--s1-color);
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.05),
-    rgba(0, 0, 0, 0.05) 1px,
-    transparent 1px,
-    transparent 12px
-  );
+    background-image: linear-gradient(var(--s2-color) 0.1vh, transparent 0.1vh), linear-gradient(to right, var(--s2-color) 0.1vh, transparent 0.1vh);
+    background-size: 2vh 2vh;
     background-size: 2vh 2vh;
     background-color: var(--s1-color);
   }
@@ -493,6 +488,7 @@
   }
 
   
+
 
 
 
