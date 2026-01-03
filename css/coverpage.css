@@ -1,268 +1,474 @@
-/* CSS FOR NAV */
-nav {
-  height: 10vh;
-  background-color: royalblue;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 15px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+body{
+    margin: 0px;
+    padding:0px;
+    border: 20px solid black;
+    border-top: none;
+    border-right: none;
+    cursor: url('images/custom-cursor.png'), auto;
 }
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height:96vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    justify-content: flex-start;
+    padding: 0%;
+    margin: 0%;
+    border-bottom: 4px solid black;
+  }
+  .nav-bar
+  {
+    background-color:#c4c4c4;
+    width: 100%;
+    border-top: 20px solid black;
+    border-bottom: 4px solid black;
+    position: fixed;
+  }
+  .nav-options {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    list-style-type: none;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+    justify-content: space-between;
+    overflow: hidden;
+    
+  }
+    .img{
+    padding: 12px;
+    /*border: 4px solid #272727;*/
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-left: 25px;
+    transform: scale(2);
+    cursor: pointer;
+  }
+  .pc-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    gap: 3vh;
+    padding: 12px;
+    margin-right:20px ;
+  }
+ .nav-option{
+    padding: 3px;
+    border: 2px solid transparent;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow:0px 0px transparent;
+    margin-right: 20px;
+  }
+  .nav-option:hover {
+    border: 3px solid black;
+    box-shadow:2px 2px 0 0 black;
+  }
+  .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%; /* Take up the full width of the parent container */
+    padding: 0 10%; /* Add some padding to the sides */
+    justify-content: space-between;
+  }
+  
+  .text-container {
+    margin-right: 20px;
+  }
+  
+  .main-header {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family:'Baloo Thambi 2', cursive;
+    text-align: center;
+  }
+  
+  
+  .sub-header {
+    font-family:'Fira Code', monospace;
+    font-size: 20px;
+    word-spacing: 8px;
+    padding-top: 25px;
+    font-weight:lighter;
+    color: #4A4A4A;
+    text-align: center;
+  }
+  
+  .main-img {
+    margin-left: 20px;
+    overflow:visible;
+  }
+  
+  .img-main {
+    width:auto;
+    height:400px;
+    border-radius: 50%;
+    border: 4px solid black;
+    box-shadow: 8px 8px 5px 0 gray;
+  }
 
-.leftnav {
-  font-size: 25px;
-  font-weight: bolder;
-  color: white;
-}
+  ::-webkit-scrollbar {
+    width: 20px;
+    background-color: black; 
+    border-left: 3.5px solid black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the thumb */
+    border: 3px solid black; /* Set the border radius */
+  }
+  .main-img img:hover{
+    animation: floating 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateX(-8px);
+    }
+    100% {
+      transform: translateY(8px);
+    }
+  }
+  .page2{
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    border-bottom: 4px solid black;
+  }
+  .page2-wrapper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about{
+    width: 80%;
+    border: 4px solid black;
+    box-shadow: 8px 8px 0 0 #000; 
+    
+  }
+  .about-header{
+    padding-left:15px;
+    width:100%;
+    font-family:'Baloo Thambi 2', cursive;
+    font-size:1.5rem;
+    font-weight:600;
+    /*text-decoration:underline 5px;
+    text-decoration-color: #000;*/
+    text-align: center;
+    background-color: #c4c4c4; 
+    border-bottom: 4px solid #000;
+  }
+  .para{
+    max-width: 100%;
+    padding-top: none;
+    padding:20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .page3{
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    border-bottom:4px solid black;
 
-.rightnav {
-  font-size: 20px;
-  font-weight: bold;
-}
+  }
+  .project-header{
+    padding-left:15px;
+    width:100%;
+    font-family:'Baloo Thambi 2', cursive;
+    font-size:1.5rem;
+    font-weight:600;
+    text-align: center;
+    background-color: #c4c4c4; 
+    border-bottom: 4px solid #000;
+  }
+  .project-section {
+    width: 80%;
+    border:4px solid black;
+    box-shadow: 8px 8px 0 0 #000; 
+  }
+  
+  .project-container {
+    display: flex;
+    overflow-x: auto;
+    max-height:500px;
+    margin-top: 10px;
+  }
+  .project-section ::-webkit-scrollbar{
+    display: none;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px; /* Adjust the width of each project card as needed */
+    height: 300px; /* Adjust the height of each project card as needed */
+    background-color: #f2f2f2;
+    margin-bottom:15px;
+    margin-right: 15px;
+    margin-left:15px;
+    box-shadow:5px 5px 0 0 #000;
+    border: 2px solid black;
+    }
+  .item-header{
+    font-family:'Baloo Thambi 2', cursive;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    text-align: center;
+    background-color: #c4c4c4;
+  }
+  .pro-content{
+    font-family: 'Fira Code', monospace;
+    padding: 20px;
+    text-align: center;
+  }
+  .links{
+    font-family: 'Fira Code', monospace;
+    padding: 20px;
+    text-align:left;
+    margin-left: 50px;
+    display: inline-block; 
+    font-weight: bold;
+   
+    width: fit-content;
+  }
+  .git{
+    color: #000;
+    padding: 2px;
+    border: 0px transparent;
+    box-shadow:0px 0px 0 0 transparent;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  .git:hover{
+    color:red;
+    box-shadow:2px 2px 0 0 #000;
+    border: 2px solid black;
+  }
+  .demo{
+    margin-left: 30px;
+    padding: 2px;
+    font-weight: bold;
+    color: #000;
+    border: 0px transparent;
+    box-shadow:0px 0px 0 0 transparent;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  .demo:hover{
+    color:#2dba4e;
+    box-shadow:2px 2px 0 0 #000;
+    border: 2px solid black;
+  }
+  .page4{
+    min-height:120vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-bottom: 4px solid black;
+  }
+  .resume-section{
+    width: 70vh;
+    height: 105vh;
+    background: white;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px 0 0 #000; 
+    overflow: hidden;
+  }
+  .top-part{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+    font-size:2vh;
+    font-family:sans-serif;
+    gap:1vh;
+  }
+  .name{
+    font-size: 2.3vh;
+    font-weight: bold;
+  }
+  .horizontal-line{
+    border: none; 
+    border-top: 1px solid black;
+    width:80%;
+  }
+  .resume-header{
+    margin-top:5px;
+    font-family: sans-serif;
+    font-size: 2.3vh;
+    font-weight: bold;
+  }
+  .summary-description{
+    text-align:left;
+    font-size:1.3vh;
+    font-family: sans-serif;
+    width:80%;
+    margin-top:10px;
+  }
+  .skills{
+    text-align:left;
+    font-size:1.3vh;
+    font-family: sans-serif;
+    width:80%;
+    margin-top:10px;
+  }
+  .projects-header{
+    margin-top:8px;
+    font-family: sans-serif;
+    font-size: 1.3vh;
+    font-weight: bold;
+  }
+  .pro-desc{
+    text-align:left;
+    font-size:1.3vh;
+    font-family: sans-serif;
+    width:80%;
+    margin-top:8px;
+  }
+  .edu-desc{
+    text-align:left;
+    font-size:1.3vh;
+    font-family: sans-serif;
+    width:80%;
+    margin-top:8px;
+  }
+  .language-desc{
+    text-align:left;
+    font-size:1.3vh;
+    font-family: sans-serif;
+    width:60%;
+    margin-top:5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hob-desc{
+    text-align:left;
+    font-size:1.3vh;
+    font-family: sans-serif;
+    width:60%;
+    margin-top:5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .personal-desc{
+    text-align:left;
+    font-size:1.3vh;
+    font-family: sans-serif;
+    width:80%;
+    margin-top:8px;
+  }
+  .button{
+    display: flex;
+    justify-content: flex-end;
+    width:80%;
+  }
+  .cv{
+    display: inline-block;
+    padding: 5px;
+    font-size: 1.5vh;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color:black;
+    border: none;
+    cursor: pointer;
+    border: 0px transparent;
+    box-shadow:0px 0px 0 0 transparent;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .cv:hover{
+    color:red;
+    box-shadow:2px 2px 0 0 #000;
+    border: 2px solid black;
+  }
 
-/* CSS FOR MAIN */
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  margin: auto;
-  width: 70%;
-  margin-top: 9.5vh;
-  margin-bottom: 6vh;
-}
-
-h1 {
-  text-transform: uppercase;
-
-}
-
-p {
-  margin-top: -20px;
-  opacity: 50%;
-}
-
-.section {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  gap: 2vh;
-  padding: 40px;
-  flex-wrap: wrap-reverse;
-}
-
-
-/* CSS FORLEFTSECTION */
-.leftsection {
-
-  margin: 20px 20px;
-}
-
-
-.inputcover {
-  width: 100%;
-  text-align: left;
+  .page5{
+    min-height:120vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+  }
+  .contact-me{
+    width: 80vh;
+    height: 70vh;
+    background: white;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    box-shadow: 8px 8px 0 0 #000; 
+    overflow: hidden;
+    border:4px solid black;
+  }
+  .label{
+    font-family:'Baloo Thambi 2', cursive;
+    padding:10px;
+    margin-left: 10px;
+    font-weight: bold;
+    display: inline-block;
+    width:100px;
+  }
+  .textbox{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 30px;
+    width:70%;
+    border:2px solid black;
+    box-shadow: 5px 5px 0 0 #000; 
+    font-family:'Baloo Thambi 2', cursive;
+    outline-style: none;
+  }
+  .form-button{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+ .fbutton{
+  align-self: center;
+  border: none;
+  padding: 5px;
+  font-family: 'Baloo Thambi 2', cursive;
   font-size: 2vh;
-  text-transform: uppercase;
   font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-.inputsubject select {
-  cursor: pointer;
-  width: 111%;
-  border-radius: 0.5vh;
-  background: white;
-  border: 0.3vh solid black;
-  padding: 1vh;
-  font-size: 1.5vh;
-  margin-bottom: 5px;
-  opacity: 65%;
-}
-
-.inputsubject select optgroup {
-  color: black;
-  font-size: 2vh;
-  width: 100%;
-}
-
-.inputsubject select optgroup option {
-  width: 100%;
-  font-size: 1.5vh;
-}
-
-.takename input {
-  padding: 1vh 2vh;
-  font-size: 1.5vh;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5vh;
-  background: white;
-  border: 0.3vh solid black;
-  margin-bottom: 5px;
-}
-
-.takeroll input {
-  padding: 1vh 2vh;
-  font-size: 1.5vh;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5vh;
-  background: white;
-  border: 0.3vh solid black;
-  margin-bottom: 5px;
-}
-
-.takereport input {
-  padding: 1vh 2vh;
-  font-size: 1.5vh;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5vh;
-  background: white;
-  border: 0.3vh solid black;
-  margin-bottom: 5px;
-}
-
-.taketitle input {
-  padding: 1vh 2vh;
-  font-size: 1.5vh;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5vh;
-  background: white;
-  border: 0.3vh solidblack;
-  margin-bottom: 30px;
-}
-
-.download:hover{
-  background-color: rgb(50, 86, 197);
-}
-.download {
-  padding: 1vh 2vh;
-  font-size: 2vh;
-  font-weight: bold;
-  color: #F2F2F2;
-  width: 111%;
-  height: 100%;
-  border-radius: 0.5vh;
-  background: royalblue;
-  border: 0.3vh solid black;
-  margin-bottom: 17px;
-  cursor: pointer;
-}
-
-/*CSS FOR RIGHTSECTION */
-.rightsection {
-  margin: -15px 0px;
-}
-
-.output {
-  width: 48vh;
-  height: 65vh;
-  background: white;
-  border: 0.3vh solid black;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-
-}
-
-.top-part {
-  position: absolute;
-  top: 10%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 900;
-  justify-content: center;
-  gap: 0.5vh;
-}
-
-.college-name {
   text-align: center;
-  font-size: 2vh;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.address {
-  font-size: 1.2vh;
-}
-
-.naac {
-  font-size: 1.4vh;
-}
-
-.trust {
-  font-size: 1vh;
-}
-
-.clg-logo {
-  position: absolute;
-  top: 25%;
-  width: 50vh;
-  height: 15vh;
-  overflow: hidden;
-}
-
-.clg-logo img {
-  width: 50vh;
-  height: 100%;
-  object-fit: contain;
-}
-
-.titles {
-  position: absolute;
-  top: 47%;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1vh;
-  font-size: 1.5vh;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.submitted {
-  position: absolute;
-  top: 70%;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1vh;
-  font-size: 1.3vh;
-  font-weight: bold;
-}
-
-.submheader {
-  font-size: 1.5vh;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.signature {
-  position: absolute;
-  top: 95%;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: right;
-  gap: 1vh;
-  font-size: 1vh;
-  font-weight: 900;
-  text-transform: uppercase;
-  padding-right: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  color:black;
+  border: none;
+  cursor: pointer;
+  border: 0px transparent;
+  box-shadow:0px 0px 0 0 transparent;
+  transition: box-shadow 0.3s ease-in-out;
+ }
+ .fbutton:hover{
+  color:red;
+  box-shadow:2px 2px 0 0 #000;
+  border: 2px solid black;
 }
